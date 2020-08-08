@@ -1,0 +1,72 @@
+Get all Books:
+http://localhost:9080/library/books -- Get
+
+
+Get a Book:
+http://localhost:9080/library/book/102 -- Get
+
+
+
+Add a Book:
+http://localhost:9080/library/book -- Post
+
+Request Pay load
+{
+        "bkid": 104,
+        "pageCount": 100,
+        "author": {
+            "firstName": "Rowling",
+            "lastName": "JK"
+        },
+        "genre": [
+            "comedy",
+            "fiction"
+        ],
+        "title": "Harry Potter",
+        "status":"Available",
+        "borrower":"121"
+    }
+
+
+
+--------------------------
+
+Get all Users:
+http://localhost:9080/library/users  -- Get
+
+
+Get a User:
+http://localhost:9080/library/user/201 -- Get
+
+
+Add a User:
+http://localhost:9080/library/user  -- Post
+
+Request Pay load
+{
+    "userid": 121,
+    "firstName": "Glen",
+    "lastName": "Ping",
+    "borrowingLimit": 1,
+    "bookTitle": "Stars in the Sky",
+    "bookissuedDt": "2020-08-07",
+    "rerunDate": "2020-08-22",
+    "status": "1 book issued"
+}
+
+Lend a Book:
+http://localhost:9080/library/lendbook/userid/bookid
+
+http://localhost:9080/library/lendbook/202/102  -- Get
+
+
+--------------------------
+
+Create a loan record for a given book/borrower:
+http://localhost:9080/library/record  -- Get
+
+Get a list of past borrowers for a book:
+http://localhost:9080/library/record/book/101  -- Get
+
+Get a list of past books borrowed by a given borrower:
+http://localhost:9080/library/record/borrower/201  -- Get

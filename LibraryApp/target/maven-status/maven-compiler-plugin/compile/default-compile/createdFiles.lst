@@ -1,0 +1,15 @@
+lms\co\model\Borrower.class
+lms\co\repository\BookRepository.class
+lms\co\model\Author.class
+lms\co\model\LoanDetails.class
+lms\co\controller\BorrowerResource.class
+lms\co\LibraryApp.class
+lms\co\RepoConfig.class
+lms\co\controller\BooksResource.class
+lms\co\repository\LoanRepository.class
+lms\co\controller\BooksResourceImpl.class
+lms\co\controller\BorrowerResourceImpl.class
+lms\co\controller\LoanResourceImpl.class
+lms\co\model\Book.class
+lms\co\repository\BorrowerRepository.class
+lms\co\controller\LoanResource.class
